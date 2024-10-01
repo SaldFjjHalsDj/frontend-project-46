@@ -5,15 +5,13 @@ import gendiff from '../src/index.js';
 const program = new Command();
 
 program
-  .name('gendiff')
+  .version('1.0.0')
   .description('Compares two configuration files and shows a difference.')
-  .option('-v, --version', 'output the version number')
   .option('-f, --format [type]', 'output format')
-  .argument('<filepath1>')
-  .argument('<filepath2>')
+  .arguments('<filepath1> <filepath2>')
   .action((filepath1, filepath2) => {
     const result = gendiff(filepath1, filepath2);
     console.log(result);
   });
 
-program.parse();
+program.parse(process.argv);

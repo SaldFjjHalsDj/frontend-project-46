@@ -2,6 +2,7 @@ import globals from 'globals';
 
 import path from 'path';
 import { fileURLToPath } from 'url';
+import jest from 'eslint-plugin-jest';
 import { FlatCompat } from '@eslint/eslintrc';
 import pluginJs from '@eslint/js';
 import importPlugin from 'eslint-plugin-import';
@@ -19,6 +20,7 @@ export default [
     languageOptions: {
       globals: {
         ...globals.node,
+        ...globals.jest,
       },
       parserOptions: {
         // Eslint doesn't supply ecmaVersion in `parser.js` `context.parserOptions`
@@ -27,9 +29,10 @@ export default [
         sourceType: 'module',
       },
     },
-    plugins: { import: importPlugin },
+    plugins: { import: importPlugin, jest },
     rules: {
       ...importPlugin.configs.recommended.rules,
+      ...jest.configs.recommended.rules,
     },
   },
   ...compat.extends('airbnb-base'),

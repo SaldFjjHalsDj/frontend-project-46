@@ -1,5 +1,15 @@
+install:
+				npm ci
+
 lint:
-	npx eslint .
+				npx eslint .
 
 update:
-	npm update --save-dev
+				npm update --save-dev
+
+test:
+				NODE_OPTIONS=--experimental-vm-modules npx jest
+
+test-coverage:
+				npm run coverage
+
