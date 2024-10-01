@@ -11,5 +11,5 @@ test:
 				NODE_OPTIONS=--experimental-vm-modules npx jest
 
 test-coverage:
-				npm run coverage
+				npm test -- --coverage --coverageProvider=v8
 
