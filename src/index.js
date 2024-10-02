@@ -1,12 +1,12 @@
 import _ from 'lodash';
 import path from 'path';
 import { readFileSync } from 'fs';
-import parse from './parse.js';
+import parsers from './parsers.js';
 import keyParse from './keyParse.js';
 
 const getFilePath = (filepath) => path.resolve(process.cwd(), filepath);
 const getFileExtention = (filepath) => path.extname(filepath).slice(1);
-const dataParse = (filepath, ext) => parse(filepath, ext);
+const dataParse = (filepath, ext) => parsers(filepath, ext);
 const readFile = (filepath) => readFileSync(getFilePath(filepath));
 
 const gendiff = (filepath1, filepath2) => {

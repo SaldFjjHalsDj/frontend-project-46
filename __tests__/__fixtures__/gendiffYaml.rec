@@ -1,0 +1,11 @@
+{"version": 2, "width": 209, "height": 23, "timestamp": 1727889336, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.007576, "o", "\u001b[?2004h\u001b]0;saldfjj@saldtable: ~/workspace/frontend-project-46/__tests__/__fixtures__\u0007\u001b[01;32msaldfjj@saldtable\u001b[00m:\u001b[01;34m~/workspace/frontend-project-46/__tests__/__fixtures__\u001b[00m$ "]
+[0.483062, "o", "\u001b[7mgendiff filepath1.yaml filepath2.yaml \u001b[27m"]
+[1.441436, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bgendiff filepath1.yaml filepath2.yaml \r\n\u001b[?2004l\r"]
+[1.516347, "o", "{\r\n - follow: false\r\n   host: hexlet.io\r\n - proxy: 123.234.53.22\r\n - timeout: 50\r\n + timeout: 20\r\n + verbose: true\r\n}\r\n"]
+[1.518693, "o", "\u001b[?2004h\u001b]0;saldfjj@saldtable: ~/workspace/frontend-project-46/__tests__/__fixtures__\u0007\u001b[01;32msaldfjj@saldtable\u001b[00m:\u001b[01;34m~/workspace/frontend-project-46/__tests__/__fixtures__\u001b[00m$ "]
+[4.056828, "o", "\u001b[7mgendiff filepath1.yml filepath2.yml\u001b[27m"]
+[5.309769, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bgendiff filepath1.yml filepath2.yml\r\n\u001b[?2004l\r"]
+[5.382401, "o", "{\r\n - follow: false\r\n   host: hexlet.io\r\n - proxy: 123.234.53.22\r\n - timeout: 50\r\n + timeout: 20\r\n + verbose: true\r\n}\r\n"]
+[5.384827, "o", "\u001b[?2004h\u001b]0;saldfjj@saldtable: ~/workspace/frontend-project-46/__tests__/__fixtures__\u0007\u001b[01;32msaldfjj@saldtable\u001b[00m:\u001b[01;34m~/workspace/frontend-project-46/__tests__/__fixtures__\u001b[00m$ "]
+[7.471144, "o", "\u001b[?2004l\r\r\nexit\r\n"]

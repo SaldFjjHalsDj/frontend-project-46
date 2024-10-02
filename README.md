@@ -9,5 +9,8 @@ Project "Difference Calculator". The main purpose of this project is to make uti
 
 ### Examples
 
-Asciinema stylish:
-<a href="https://asciinema.org/a/6RzgBo3YoHCSktFksZDoaOnzZ" target="_blank"><img src="https://asciinema.org/a/6RzgBo3YoHCSktFksZDoaOnzZ.svg" /></a>
+Asciinema JSON stylish:
+<a href="https://asciinema.org/a/hVKNKxnmfgvWsJLm8NhwKFtie" target="_blank"><img src="https://asciinema.org/a/hVKNKxnmfgvWsJLm8NhwKFtie.svg" /></a>
+
+Asciinema YAML stylish:
+<a href="https://asciinema.org/a/EViy4K55Ny2bfJ8piCoTOW52z" target="_blank"><img src="https://asciinema.org/a/EViy4K55Ny2bfJ8piCoTOW52z.svg" /></a>
