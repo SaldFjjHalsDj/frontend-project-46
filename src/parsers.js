@@ -7,4 +7,3 @@ const parsers = {
 };
 
 export default (filepath, ext) => parsers[ext](filepath);
-
