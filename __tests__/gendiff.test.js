@@ -8,12 +8,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const fileExtensions = ['json', 'yml', 'yaml'];
-const formatters = ['stylish'];
+const formatters = ['stylish', 'plain'];
 
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 const stylish = readFileSync(getFixturePath('stylish'), { encoding: 'utf8', flag: 'r' });
+const plain = readFileSync(getFixturePath('plain'), { encoding: 'utf8', flag: 'r' });
 
-const output = { stylish };
+const output = { stylish, plain };
 
 const testArgs = formatters.flatMap((format) => (
   fileExtensions.map((fileExtension) => [fileExtension, format])

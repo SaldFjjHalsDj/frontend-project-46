@@ -35,7 +35,7 @@ const iter = (tree, depth = 1) => tree.map((node) => {
       return `${indent(depth, IS_FULL)}${node.key}: {\n${lines.join('\n')}\n${indent(depth, IS_FULL)}}`;
     }
     default:
-      return null;
+      throw new Error(`Unknown node type ${node.type}.`);
   }
 });
 
