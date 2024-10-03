@@ -1,27 +1,22 @@
 /* eslint-env jest */
 
+import { test, expect, describe } from '@jest/globals';
 import { fileURLToPath } from 'url';
-import path from 'path';
+import path, { dirname } from 'path';
 import { readFileSync } from 'fs';
-import gendiff from '../src/index.js';
+import genDiff from '../src/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = dirname(__filename);
+const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
+const readFixture = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
 
-const fileExtensions = ['json', 'yml', 'yaml'];
-const formatters = ['stylish'];
+const formats = ['json', 'yaml', 'yml'];
 
-const getFixturePath = (filename) => path.join(__dirname, '.', '__fixtures__', filename);
-const stylish = readFileSync(getFixturePath('stylish'), { encoding: 'utf8', flag: 'r' });
-
-const output = { stylish };
-
-const testArgs = formatters.flatMap((format) => (
-  fileExtensions.map((fileExtension) => [fileExtension, format])
-));
-
-test.each(testArgs)('%s type files difference with %s output', (fileExtension, format) => {
-  const file1 = getFixturePath(`filepath1.${fileExtension}`);
-  const file2 = getFixturePath(`filepath2.${fileExtension}`);
-  expect(gendiff(file1, file2)).toEqual(output[format]);
+describe('genDiff should work correctly', () => {
+  test.each(formats)('genDiff should work with %p', (format) => {
+    const filepath1 = getFixturePath(`filepath1.${format}`);
+    const filepath2 = getFixturePath(`filepath2.${format}`);
+    expect(genDiff(filepath1, filepath2)).toEqual(readFixture('stylish'));
+  });
 });
