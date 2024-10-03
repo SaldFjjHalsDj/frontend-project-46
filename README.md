@@ -17,3 +17,6 @@ Asciinema YAML stylish:
 
 Asciinema YML stylish nested:
 <a href="https://asciinema.org/a/zsIYG18r3dKrmIb0vbJVCl6fc" target="_blank"><img src="https://asciinema.org/a/zsIYG18r3dKrmIb0vbJVCl6fc.svg" /></a>
+
+Asciinema JSON plain nested:
+<a href="https://asciinema.org/a/lQJUAPWmHOWb875nrS9ApsbZw" target="_blank"><img src="https://asciinema.org/a/lQJUAPWmHOWb875nrS9ApsbZw.svg" /></a>
