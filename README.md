@@ -9,14 +9,17 @@ Project "Difference Calculator". The main purpose of this project is to make uti
 
 ### Examples
 
-Asciinema JSON stylish:
+Asciinema (JSON file to stylish):
 <a href="https://asciinema.org/a/hVKNKxnmfgvWsJLm8NhwKFtie" target="_blank"><img src="https://asciinema.org/a/hVKNKxnmfgvWsJLm8NhwKFtie.svg" /></a>
 
-Asciinema YAML stylish:
+Asciinema (YAML file to stylish):
 <a href="https://asciinema.org/a/EViy4K55Ny2bfJ8piCoTOW52z" target="_blank"><img src="https://asciinema.org/a/EViy4K55Ny2bfJ8piCoTOW52z.svg" /></a>
 
-Asciinema YML stylish nested:
+Asciinema (YML nested file to stylish):
 <a href="https://asciinema.org/a/zsIYG18r3dKrmIb0vbJVCl6fc" target="_blank"><img src="https://asciinema.org/a/zsIYG18r3dKrmIb0vbJVCl6fc.svg" /></a>
 
-Asciinema JSON plain nested:
+Asciinema (JSON nested file to plain):
 <a href="https://asciinema.org/a/lQJUAPWmHOWb875nrS9ApsbZw" target="_blank"><img src="https://asciinema.org/a/lQJUAPWmHOWb875nrS9ApsbZw.svg" /></a>
+
+Asciinema (JSON nested file to JSON):
+<a href="https://asciinema.org/a/hlWzppsFjm99ng7fIhmLfYlKd" target="_blank"><img src="https://asciinema.org/a/hlWzppsFjm99ng7fIhmLfYlKd.svg" /></a>
