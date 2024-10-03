@@ -11,7 +11,7 @@ const stringify = (value) => {
   return String(value);
 };
 
-const buildPath = (node, currentPath) => (currentPath !== '') ? `${currentPath}.${node.key}` : String(node.key);
+const buildPath = (node, currentPath) => ((currentPath !== '') ? `${currentPath}.${node.key}` : String(node.key));
 
 const iter = (tree, path) => tree
   .filter((node) => node.type !== 'unchanged')
@@ -19,7 +19,7 @@ const iter = (tree, path) => tree
     const currentPath = buildPath(node, path);
     switch (node.type) {
       case 'added':
-        return `Property '${currentPath}' was added with value: ${stringify(node.value)}`
+        return `Property '${currentPath}' was added with value: ${stringify(node.value)}`;
       case 'deleted':
         return `Property '${currentPath}' was removed`;
       case 'changed':
