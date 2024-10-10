@@ -14,6 +14,5 @@ program
     const options = program.opts();
     const result = gendiff(filepath1, filepath2, options.format);
     console.log(result);
-  });
-
-program.parse(process.argv);
+  })
+  .parse(process.argv);

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const evalDifference = (parseData1, parseData2) => {
+const treeBuilder = (parseData1, parseData2) => {
   const keys = _.sortBy(_.union(Object.keys(parseData1), Object.keys(parseData2)));
   return keys.map((key) => {
     if (!_.has(parseData1, key)) {
@@ -10,7 +10,7 @@ const evalDifference = (parseData1, parseData2) => {
       return { key, value: parseData1[key], type: 'deleted' };
     }
     if (_.isPlainObject(parseData1[key]) && _.isPlainObject(parseData2[key])) {
-      return { key, children: evalDifference(parseData1[key], parseData2[key]), type: 'nested' };
+      return { key, children: treeBuilder(parseData1[key], parseData2[key]), type: 'nested' };
     }
     if (!_.isEqual(parseData1[key], parseData2[key])) {
       return {
@@ -21,4 +21,4 @@ const evalDifference = (parseData1, parseData2) => {
   });
 };
 
-export default evalDifference;
+export default treeBuilder;
